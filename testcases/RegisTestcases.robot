@@ -12,6 +12,8 @@ Suite Teardown      Close Browser
 As a user, Register user with valid data
     When future skill should display home page and display message as "สมัครสมาชิก"
     Then user key the infomation for registration ${email} ${name} ${lastName} ${mobile} ${password} ${confirmPassword}
-    Then future skill should display message as "ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์"
+    
 
+As a user, System should show the message after input data completed  
+    Then future skill should display message as "ระบบได้ส่งรหัส OTP ไปยังเบอร์โทรศัพท์"
 #    [Teardown]    user logout from future skill platform
